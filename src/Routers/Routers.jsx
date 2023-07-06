@@ -6,13 +6,15 @@ import {
 import profile from "../pages/profile"
 import App from "../App"
 
-const Routers = () => {
-    return(
+function Routers() {
+    return (
         <BrowseRouter>
-        <Routes>
-            <Route path="/" element={<App />} />
-            <Route path="/profile" element={<profile />} />
-        </Routes>
+            <Routes>
+                <Route path="/" element={<App />} />
+                <Route path="/profile" element={<profile />} />
+            </Routes>
         </BrowseRouter>
     )
 }
+
+export default Routers
